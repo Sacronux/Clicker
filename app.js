@@ -120,22 +120,22 @@ plusTenSecBtn.addEventListener('click', function() {
 
 setAutoBonus();
 
-// window.onload = function() {
-//   clickValue = +localStorage.getItem('clickValue');
-//   lvlValue = +localStorage.getItem('lvlValue');
-//   denominator = +localStorage.getItem('denominator');
-//   click = +localStorage.getItem('click');
-//   clickPowerCounter = +localStorage.getItem('clickPowerCounter');
-//   autoBonus = +localStorage.getItem('autoBonus');
-//   clickPower.innerHTML = +localStorage.getItem('clickPowerHTML');
-//   clickCounter.innerHTML = +localStorage.getItem('clickCounterHTML');
-//   clickPowerPrice.innerHTML = +localStorage.getItem('clickPowerPriceHTML');
-//   clickPowerPriceTen.innerHTML = +localStorage.getItem('clickPowerPriceTenHTML');
-//   lvl.innerHTML = (+localStorage.getItem('lvlValue') - 1);
-//   circle.style.strokeDashoffset = +localStorage.getItem('circle.style.strokeDashoffset');
-//   plusSecPrice.innerHTML = +localStorage.getItem('plusSecPrice');
-//   plusTenSecPrice.innerHTML = +localStorage.getItem('plusTenSecPrice');
-// }
+window.onload = function() {
+  clickValue = +localStorage.getItem('clickValue');
+  lvlValue = +localStorage.getItem('lvlValue');
+  denominator = +localStorage.getItem('denominator');
+  click = +localStorage.getItem('click');
+  clickPowerCounter = +localStorage.getItem('clickPowerCounter');
+  autoBonus = +localStorage.getItem('autoBonus');
+  clickPower.innerHTML = +localStorage.getItem('clickPowerHTML');
+  clickCounter.innerHTML = +localStorage.getItem('clickCounterHTML');
+  clickPowerPrice.innerHTML = +localStorage.getItem('clickPowerPriceHTML');
+  clickPowerPriceTen.innerHTML = +localStorage.getItem('clickPowerPriceTenHTML');
+  lvl.innerHTML = (+localStorage.getItem('lvlValue') - 1);
+  circle.style.strokeDashoffset = +localStorage.getItem('circle.style.strokeDashoffset');
+  plusSecPrice.innerHTML = +localStorage.getItem('plusSecPrice');
+  plusTenSecPrice.innerHTML = +localStorage.getItem('plusTenSecPrice');
+}
 
 function setProgress(click) {
   var offset = click / denominator * circumference;
