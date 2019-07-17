@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Clicker</title>
+  
+</head>
+<body>
+  
+  <div class="lvl">
+    Level: <span class="lvl-counter">0</span>
+  </div>
+  <div class="click-power">
+    Click power: <span class="click-power-counter">0</span>
+  </div>
+  <div class="clicks">
+      Points: <span class="clicks-counter">0</span>
+    </div>
+
+  <div class="first">
+
+    <div class="plus-one-cont">
+      <input class="plus-one" type="button" value="+1">
+      <p class="click-power-value">
+      Price: <span class="click-power-counter-value">10</span>
+      </p>
+    </div>
+
+    <div class="plus-ten-cont">
+      <input class="plus-ten" type="button" value="+10">
+      <p class="click-power-value-ten">
+        Price: <span class="click-power-counter-value-ten">120</span>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="second">
+    
+    <div class="plus-one-sec-cont">
+      <input class="plus-one-sec" type="button" value="+1 sec">
+      <p class="click-sec">
+        Price: <span class="click-sec-value">50</span>
+      </p>
+    </div>
+
+    <div class="plus-ten-sec-cont">
+        <input class="plus-ten-sec" type="button" value="+10 sec">
+        <p class="click-sec-ten">
+          Price: <span class="click-sec-value-ten">500</span>
+        </p> 
+    </div>
+
+  </div>
+ 
+  <div>
+    <svg class="progress-ring" width="260" height="260">
+      <circle class="progress-ring__circle" stroke="white" stroke-width="4" cx="130" cy="130" r="122" fill="transparent" />
+    </svg>
+
+  <input id="click-btn" type="button" value="CLICK">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
