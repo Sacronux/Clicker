@@ -17,8 +17,6 @@ window.onload = function() {
   }
 }
 
-console.log(localStorage.getItem('click'));
-
 const clickBtn = document.querySelector('#click-btn');
 const circle = document.querySelector('.progress-ring__circle');
 const radius = circle.r.baseVal.value;
@@ -27,6 +25,7 @@ const clickCounter = document.querySelector('.clicks-counter');
 const plusOneBtn = document.querySelector('.plus-one');
 const lvl = document.querySelector('.lvl-counter');
 const clickPower = document.querySelector('.click-power-counter');
+const passivePower = document.querySelector('.passive-counter');
 const clickPowerPrice = document.querySelector('.click-power-counter-value');
 const clickPowerPriceTen = document.querySelector('.click-power-counter-value-ten');
 const plusTenBtn = document.querySelector('.plus-ten');
@@ -138,6 +137,7 @@ let setAutoBonus =
     click += +autoBonus;
     setProgress(click);
     clickValue += +autoBonus;
+    passivePower.innerHTML = +autoBonus;
     clickCounter.innerHTML = +(clickCounter.innerHTML) + +(autoBonus);
     if(click === denominator || click >= denominator) {
       denominator *= 2.5;
