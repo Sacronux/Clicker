@@ -1,6 +1,6 @@
 import * as firebase from 'firebase';
-import { RootStore } from 'src/store/store';
-export const provider = new firebase.auth.GoogleAuthProvider();
+// import { RootStore } from 'src/store/store';
+export const provider = new firebase.default.auth.GoogleAuthProvider();
 
 export const handleOpenGoogleAuthPopUp = (store: RootStore) => {
   return firebase
@@ -19,7 +19,8 @@ export const handleOpenGoogleAuthPopUp = (store: RootStore) => {
 
 export const handleSignInWithGoogle = (store: RootStore) => {
   firebase
+    .default
     .auth()
-    .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    .setPersistence(firebase.default.auth.Auth.Persistence.LOCAL)
     .then(() => handleOpenGoogleAuthPopUp(store));
 };
