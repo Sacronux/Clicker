@@ -16,7 +16,7 @@ window.onload = function() {
     plusTenSecPrice.innerHTML = +localStorage.getItem('plusTenSecPrice');
   }
 }
-
+console.log("test")
 const clickBtn = document.querySelector('#click-btn');
 const circle = document.querySelector('.progress-ring__circle');
 const radius = circle.r.baseVal.value;
